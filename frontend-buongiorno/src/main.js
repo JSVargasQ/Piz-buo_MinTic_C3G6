@@ -1,8 +1,11 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
-Vue.config.productionTip = false
+import "bootstrap/dist/css/bootstrap.css";
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+import "bootstrap/dist/js/bootstrap.js";
+import "jquery/dist/jquery.js";
+import "wowjs/dist/wow.js";
+
+createApp(App).use(router).mount('#app')
