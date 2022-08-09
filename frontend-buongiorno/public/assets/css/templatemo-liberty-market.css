@@ -445,13 +445,13 @@ Header Style
 }
 
 .header-area .main-nav .nav li:hover a,
-.header-area .main-nav .nav li a.active {
+.header-area .main-nav .nav li a.router-link-active {
   color: #fff;
   background-color: #7453fc;
 }
 
 .background-header .main-nav .nav li:hover a,
-.background-header .main-nav .nav li a.active {
+.background-header .main-nav .nav li a.router-link-active {
   color: #fff;
   opacity: 1;
 }
@@ -580,7 +580,7 @@ Header Style
   min-height: 70px;
 }
 
-.header-area.header-sticky .nav li a.active {
+.header-area.header-sticky .nav li a.router-link-active {
   color: #fff;
 }
 
@@ -623,7 +623,7 @@ Header Style
     right: 70px;
   }
   .header-area.header-sticky .nav li a:hover,
-  .header-area.header-sticky .nav li a.active {
+  .header-area.header-sticky .nav li a.router-link-active {
     color: #7453fc!important;
     opacity: 1;
   }
@@ -822,7 +822,6 @@ Categories & Collections Style
 }
 
 .categories-collections:after {
-  background-image: url(/assets/images/category-collection-dec.png);
   width: 300px;
   height: 282px;
   position: absolute;
@@ -1630,7 +1629,6 @@ Details Page Style
 }
 
 .item-details-page:after {
-  background-image: url(/assets/images/category-collection-dec.png);
   width: 300px;
   height: 282px;
   position: absolute;

@@ -8,11 +8,12 @@
               <img src="../public/assets/images/logo.png" alt="">
             </a>
             <ul class="nav">
-              <li><a href="index.html" class="active">Inicio</a></li>
-              <li><a href="explore.html">Menu</a></li>
+              <li><router-link to="/">Inicio</router-link></li>
+              <li><router-link to="/menu">Menu</router-link></li>
               <li><a href="details.html">Pedidos</a></li>
               <li><a href="author.html">Locales</a></li>
               <li><a href="create.html">Ingresar</a></li>
+              <li><router-link to="/register">Registrarme</router-link></li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
