@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="templatemo">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>Pizzeria Buongiorno</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-liberty-market.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  </head>
+
+  
+<body>
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+   <!-- *****BARRA MENU ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
+                    <ul class="nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="explore.html">Menu</a></li>
+                        <li><a href="details.html">Pedidos</a></li>
+                        <li><a href="author.html">Locales</a></li>
+                        <li><a href="create.html" class="active">Ingresar</a></li>
+                    </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+
+
+ <!-- *****RELLENO***** -->
+  <div class="item-details-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <div class="line-dec"></div>
+            <h2>CREA <em>TU CUENTA</em></h2>
+          </div>
+        </div>
+
+        <div class="col-lg-12">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-4">
+                <fieldset>
+                  <label for="title">Usuario</label>
+                  <input type="title" name="title" id="title" placeholder="Username" autocomplete="on" required, data-val="true">
+                </fieldset>
+              </div>
+
+              <div class="col-xs-12 col-md-5 col-lg-4 form-group">
+                <label class="control-label">Contraseña</label>
+                <input name="ctl00$ContentPlaceHolder1$AccountInformation_Password" type="password" id="ctl00_ContentPlaceHolder1_AccountInformation_Password" maxlength="20" autocomplete="off" placeholder="Password" data-val-required="Introduce la contraseña." data-val-regex="Introduce la contraseña." class="form-control input-lg" data-val-length="Introduce la contraseña." data-val-length-max="50" data-val="true">
+                <span class="field-validation-valid text-danger help-block" data-valmsg-for="AccountInformation.Password" data-valmsg-replace="true"></span>
+                <span class="bi bi-eye-slash-fill" style="position: absolute; right: 25px; top: 40px; color: #50a684; cursor: pointer;" onclick="OpenClosePassLogin();" aria-hidden="true"></span>
+                <div class="passwordCriteria" style="display: none">
+                    <div class="passwordCriteriaHeader">
+                        <h2>Requisitos de Contraseña</h2>
+                    </div>
+                    <div class="passwordCriteriaBody">
+                        <div class="passwordCriteriaArrow"></div>
+                        <p id="length">Tu contraseña debe tener entre 8 y 15 caracteres</p>
+                        <p id="mixed">Debe contener al menos una letra mayúscula</p>
+                        <p id="number">Debe contener al menos un número</p>
+                        <p id="special">No debe contener ningún caracter especial diferente a @#$%()^</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-5 col-lg-4 form-group">
+              <label class="control-label">Confirmar contraseña<sup>*</sup></label>
+              <input name="ctl00$ContentPlaceHolder1$AccountInformation_ConfirmPassword" type="password" id="ctl00_ContentPlaceHolder1_AccountInformation_ConfirmPassword" maxlength="20" autocomplete="off" placeholder="Password" data-val-required="Las contraseñas no coinciden." data-val-regex="Las contraseñas no coinciden." class="form-control input-lg" data-val-length="Las contraseñas no coinciden." data-val-length-max="50" data-val="true">
+              <span class="field-validation-valid text-danger help-block" data-valmsg-for="AccountInformation.ConfirmPassword" data-valmsg-replace="true"></span>
+              <span class="bi bi-eye-slash-fill" style="position: absolute; right: 25px; top: 40px; color: #50a684; cursor: pointer;" onclick="OpenClosePassconfLogin();" aria-hidden="true"></span>
+          </div>
+
+          <div class="col-xs-12 col-md-3 col-lg-3 form-group">
+            <label class="control-label">Nombre<sup>*</sup></label>
+            <input name="ctl00$ContentPlaceHolder1$txtnombre" type="text" id="ctl00_ContentPlaceHolder1_txtnombre" maxlength="50" placeholder="Name" data-val-required="Introduce tu primer nombre (No se permiten carecteres especiales ni números)." data-val-regex="Introduce tu primer nombre (No se permiten carecteres especiales ni números)." class="form-control input-lg" data-val-regex-pattern="^([a-zA-ZÀ-ÿ ,.'-]){1,120}$" data-val-length="Introduce tu primer nombre (No se permiten carecteres especiales ni números)." onblur="myFunction(this.id);" data-val-length-max="120" data-val="true">
+            <span class="field-validation-valid text-danger help-block" data-valmsg-for="AccountInformation.FirstName" data-valmsg-replace="true"></span>
+        </div>
+
+        <div class="col-xs-12 col-md-3 col-lg-3 form-group">
+          <label class="control-label">Apellido<sup>*</sup></label>
+          <input name="ctl00$ContentPlaceHolder1$txtApellidos" type="text" id="ctl00_ContentPlaceHolder1_txtApellidos" class="form-control input-lg" onblur="myFunction(this.id);" placeholder="Last Name" maxlength="50">
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-lg-4 form-group">
+        <label class="control-label">Número de teléfono</label>
+        <input name="ctl00$ContentPlaceHolder1$ContactPhone" type="text" id="ctl00_ContentPlaceHolder1_ContactPhone" placeholder="Number Phone" data-val-required="Ingrese un número de teléfono válido." maxlength="12" class="form-control input-lg" data-val-length="Ingrese un número de teléfono válido." onblur="myFunction(this.id);" onkeypress="return SoloNumeros(event, this.id, [], 0);" data-val-length-max="17" data-val="true">
+        <span class="field-validation-valid text-danger help-block" data-valmsg-for="AccountInformation.ContactPhone" data-valmsg-replace="true"></span>
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-lg-4 form-group">
+        <label class="control-label">Correo</label>
+        <input name="ctl00$ContentPlaceHolder1$txtmail" type="text" id="ctl00_ContentPlaceHolder1_txtmail" maxlength="50" placeholder="e-mail" data-val-required="Proporciona un dirección de correo electrónico valido." data-val-regex="Proporciona un dirección de correo electrónico valido." class="form-control input-lg" data-val-length="Proporciona un dirección de correo electrónico valido." onblur="myFunction(this.id);" data-val-length-max="50" data-val="true">
+        <span class="field-validation-valid text-danger help-block" data-valmsg-for="AccountInformation.Email" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="col-xs-12 col-md-4 col-lg-4 form-group">
+      <label class="control-label">Confirmación Correo</label>
+      <input name="ctl00$ContentPlaceHolder1$txtmail_Conf" type="text" id="ctl00_ContentPlaceHolder1_txtmail_Conf" maxlength="50" autocomplete="off" placeholder="e-mail" data-val-required="Proporciona un dirección de correo electrónico valido." data-val-regex="Proporciona un dirección de correo electrónico valido." class="form-control input-lg" data-val-length="Proporciona un dirección de correo electrónico valido." onblur="myFunction(this.id);" data-val-length-max="50" data-val="true">
+      <span class="field-validation-valid text-danger help-block" data-valmsg-for="AccountInformation.Email" data-valmsg-replace="true"></span>
+  </div>
+
+  <div class="col-xs-12 col-md-4 col-lg-4 form-group">
+    <label class="control-label">Dirección</label>
+    <input name="ctl00$ContentPlaceHolder1$txtDireccion" type="text" id="ctl00_ContentPlaceHolder1_txtDireccion" class="form-control input-lg" onblur="myFunction(this.id);" placeholder="Adress" onkeypress="return blockSpecialChar(event);" maxlength="500">
+  </div>
+
+      <div class="col-lg-12">
+        <fieldset>
+          <button type="submit" id="form-submit" class="orange-button">REGISTRATE</button>
+        </fieldset>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+
+  <!-- ***** PIE DE PAGINA ***** -->    
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Pizzeria Buongiorno, Copyright©2022▫▫Ecommerce Pizzeria Buongiorno▫▫Todos los derechos reservados</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/popup.js"></script>
+  <script src="assets/js/custom.js"></script>
+  </body>
+  </html>
