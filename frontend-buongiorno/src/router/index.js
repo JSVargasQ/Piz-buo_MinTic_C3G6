@@ -6,6 +6,7 @@ import Register from '../pages/Register.vue'
 
 // Components
 import Menu from '../components/Menu.vue'
+import Locales from '../components/Locales.vue'
 
 const routes = [
   {
@@ -22,6 +23,11 @@ const routes = [
     path: '/menu',
     name: 'menu',
     component: Menu
+  },
+  {
+    path: '/locales',
+    name: 'locales',
+    component: Locales
   },
 ]
 

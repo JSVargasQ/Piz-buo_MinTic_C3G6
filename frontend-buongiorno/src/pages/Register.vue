@@ -100,7 +100,13 @@
 </template>
 
 <script>
+import UserService from '../service/UserService';
+
   export default {
+    userService: null,
+    created() {
+      this.userService = new UserService();
+    },
     data() {
       return {
         user: null,
@@ -118,13 +124,22 @@
 
         const dataForm = {
           username: this.user,
-          name: this.name + " " + this.lastname,
+          name: (this.name ?? '') + " " + (this.lastname ?? ''),
           password: this.password,
           email: this.email,
           phone: this.phone,
-          address: this.address
+          address: this.address,
+          account: {
+            "balance": 123,
+            "lastChangeDate": "2022-07-26 07:20:00",
+            "isActive": true
+          }
         }
-        console.log(dataForm);
+
+        this.userService.registerUser(dataForm).then( () => {
+          this.$router.push('/');
+        } );
+
       }
     }
   }

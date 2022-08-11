@@ -11,7 +11,7 @@
               <li><router-link to="/">Inicio</router-link></li>
               <li><router-link to="/menu">Menu</router-link></li>
               <li><a href="details.html">Pedidos</a></li>
-              <li><a href="author.html">Locales</a></li>
+              <li><router-link to="/locales">Locales</router-link></li>
               <li><a href="create.html">Ingresar</a></li>
               <li><router-link to="/register">Registrarme</router-link></li>
             </ul>
