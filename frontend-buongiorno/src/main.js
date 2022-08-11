@@ -9,6 +9,6 @@ import "jquery/dist/jquery.js";
 import "wowjs/dist/wow.js";
 
 
-export const BASE_URL = "http://127.0.0.1:8000";
+export const BASE_URL = "https://pizzeria-backend-c3g6.herokuapp.com";
 
 createApp(App).use(router).mount('#app')

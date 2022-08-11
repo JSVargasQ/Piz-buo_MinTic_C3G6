@@ -10,6 +10,7 @@ export default class UserService {
             body: JSON.stringify(data)
         };
 
+
         return fetch(
             BASE_URL + '/userCreate/',
             requestOptions
